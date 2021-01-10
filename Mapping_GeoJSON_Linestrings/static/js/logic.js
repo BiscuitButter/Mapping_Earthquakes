@@ -40,6 +40,7 @@ let torontoData = "https://raw.githubusercontent.com/BiscuitButter/Mapping_Earth
 // Grabbing our GeoJSON data.
 d3.json(torontoData).then(function(data) {
   console.log(data);
+
 // Creating a GeoJSON layer with the retrieved data.
 L.geoJson(data, {
   color: '#ffffa1',
@@ -51,3 +52,4 @@ L.geoJson(data, {
 })
 .addTo(map);
 });
+
